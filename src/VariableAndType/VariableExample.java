@@ -1,7 +1,7 @@
 package VariableAndType;
 
-public class Main {
-    pubic static void main(String[] args) {
+public class VariableExample {
+    public static void main(String[] args) {
         int value = 10;
 
         int result = value + 10;
