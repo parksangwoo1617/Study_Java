@@ -1,2 +1,11 @@
-package referenceType;public enum Week {
+package referenceType;
+
+public enum Week {
+    MONDAY,
+    TUESDAY,
+    WEDNESDAY,
+    THURSDAY,
+    FRIDAY,
+    SATURDAY,
+    SUNDAY
 }
