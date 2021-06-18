@@ -1,2 +1,5 @@
-package aboutInterface;public interface InterfaceA {
+package aboutInterface;
+
+public interface InterfaceA {
+    public void methodA();
 }
