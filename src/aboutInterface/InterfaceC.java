@@ -1,2 +1,5 @@
-package aboutInterface;public class InterfaceC {
+package aboutInterface;
+
+public interface InterfaceC extends InterfaceA, InterfaceB {
+    public void methodC();
 }
