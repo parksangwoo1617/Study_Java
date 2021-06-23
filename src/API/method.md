@@ -94,4 +94,72 @@ split()은 정규 표현식으로 구분하고, StringTokenizer는 문자로 구
 ## StringBuffer, StringBuilder 클래스
 - String 클래스는 내부의 문자열을 수정할 수 없다.
 - 문자열 수정이 많은 작업에서는 StringBuffer, StringBuilder 클래스를 사용하는 것이 프로그램 성능에 좋다.
-  
+## 정규 표현식과 Pattern 클래스
+### 정규 표현식 작성 방법
+- 정규 표현식은 문자 또는 숫자 기호와 반복 기호가 결합된 문자열이다.
+- 이메일, 전화번호를 사용자가 제대로 입력했는지 검증해야할 때 사용한다.
+### Pattern 클래스 (matches())
+- 정규 표현식으로 문자열을 검증할 때 사용한다.
+## Arrays 클래스
+- 배열 조작 기능을 가지고 있다. 
+## Wrapper 클래스
+- 자바는 기본 타입의 값을 갖는 객체를 생성할 수 있다. 이런 객체를 포장 객체라고 한다.
+    - 기본 타입의 값을 내부에 두고 포장하기 때문이다.
+- 포장하고 있는 기본 타입의 값은 외부에서 변경할 수 없다.
+### 박싱과 언박싱
+- 박싱: 기본 타입의 값을 포장 객체로 만드는 과정
+- 언박싱: 포장 객체에서 기본 타입의 값을 얻어내는 과정
+### 자동 박싱과 언박싱
+- 자동 박싱은 포장 클래스 타입에 기본값이 대입될 경우에 발생한다.
+- 자동 언박싱은 기보 타입에 포장 객체가 대입될 경우에 발생한다.
+## Math, Random 클래스
+### Math 클래스
+```aidl
+int abs(int a)
+double abs(double a)
+```
+```aidl
+double ceil(double a)
+```
+```aidl
+double floor(double a)
+```
+```aidl
+int max(int a, int b)
+double max(double a, double b)
+```
+```aidl
+int min(int a, int b)
+double min(double a, double b)
+```
+```aidl
+double random()
+```
+```aidl
+double rint(double a)
+```
+```aidl
+long round(double a)
+```
+## Date, Calendar 클래스
+### Date 클래스
+```Date now = new Date()```
+날짜를 문자열로 얻고 싶다면 ```now.toString()```
+### Calendar 클래스
+```Calendar now = Calendar.getInstance();```
+## Format 클래스
+자바에서는 여러가지 문자열들을 다시 조합해서 (ex: 날짜 원하는 형식으로 변환) 반환해주는 클래스를 제공한다.
+### 숫자 형식 클래스(DecimalFormat)
+### 날짜 형식 클래스(SimpleDateFormat)
+### 문자열 형식 클래스(MessageFormat)
+## java.time 패키지
+### 날짜와 시간 객체 생성
+- LocalDate
+- LocalTime
+- LocalDateTime
+- ZonedDateTime
+- Instant
+### 날짜와 시간에 대한 정보 얻기
+LocalDate와 LocalTime은 프로그램에서 날짜와 시간 정보를 이용할 수 있도록 여러가지 메소드를 제공한다.
+### 날짜와 시간 조작하기
+- 날짜와 시간 클래스들은 날짜와 시간을 조작하는 메소드와 상대 날짜를 리턴하는 메소드들을 가지고 있다.
