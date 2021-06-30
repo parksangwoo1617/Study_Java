@@ -1,2 +1,4 @@
-package Generic;public class Tv {
+package Generic;
+
+public class Tv {
 }
