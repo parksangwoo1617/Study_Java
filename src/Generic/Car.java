@@ -1,2 +1,4 @@
-package Generic;public class Car {
+package Generic;
+
+public class Car {
 }
