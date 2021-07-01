@@ -1,2 +1,6 @@
-package Lambda;public class MyFunctionalInterface {
+package Lambda;
+
+@FunctionalInterface
+public interface MyFunctionalInterface {
+    public void method(int x);
 }
